@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Classification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PEFKaiGgfJ3_gjA2_OBZpAaH4gnUikk34_7CZQJlLAcXIC4dEuidiuYWS-bqDyzvSvPgb1mGYvXAnfPq2FzIfPRlOVrxW_vPdAuF4TJzzY9vpvMjkNzPU07XVj-ZcWEkI3E8TIY99ESxr6_3t6_gF0R090-t5Imok4g8teuJegYHLOjEBVv9rsMJT5AXpfHUE8mVIMfNR9ZF2xxZF2WXplnf4tskxdcQg6VnuaDxm6tPrp104PCSpaLsMYerhG87nXNHvxQR2t56GGUGi7N9HSW96-blmQwYV2pRfsmtt_RoeYtCjZR9YsuJb3zM5BHO9woIWrA5vmPyykqFtw1oX9FMvnNdxjqI0wryjaMqQ2s90CXg7gL9x1d1wQwcbG9CxTe5XMgGI2VexT9G5m0L5b5nHldnB60zFtleBHfOxnWnLqsPYnCZi5JTSHYVYQ6nHMQ9ioa-laCrRpJQgJ9RqcqZSXNt6epk_9sCa78DQ4m0zGy8GWTzoouH4pDu5KUoW2FeY0bCrjbRHnEgEoWDjS4DMLv8QNFG_BgRghG1gvbwRXB1sYunY2Qu7pnDtuv3aK50kMLdG0C2aVCb4Jblnhd5rCLbmbuWJOBocOHZ6Tvq03R--Vt4isFwjAIvHCZE2yFbzjWFQXnNFE7201guOwX_hLEhs5I6AKX6p_a2_AxmRGSISNHe-n9vnwYnd6H0Q1yLM3BwgNfDw2HVWAnEJIxfhin4_bmHqxvTMIVL8EdxkT1RMVFoM73mU_8J02KHJRJ-BcTac5nCYWQtXIl6UNprZvg0CXqY7gFvsG0SodP-moMzzz3aS52EThA1GMZYyeIU7ZnPFfheBXtEKqZptVaodZV0r_rNRQrFqIvkFkdColnlIMRSGA_BG1dAaIvsneIXdAgDWbuHcmJgnHAVCK1tGQBeCqri00vNs6sYQjxTLoqvMbxCLODs5JmVDg5U-xC1oVwrcoKkvsLvtIhupoUSYSjpYE08oWjAOGzQBl4vo9Cg_1KYfglCLPAabXyHlHyMrDQmdcJcU-ighxZjZXkugRyImh48wwEVQCzZSTcE3DLJj3YoT2joDxHSt44ZEvvVZHsAWw2Z8VaCDzfYjYMOguMIk9vABpFGLv33LO83lFL8hkUeSmKoa0Dsit30POllipE78C9mUqL8DJCFpq4jW6eLJOaSz4OQ7LlHVlNknbvNGxSIhVXZr2x52LhbHuRkBfcfnvROP8lPxCwWA_3Kt-mTMwIo0RYw1oTOxuSVA4QA09z_8Si_JXXMr5umUwBxTqjW2vd5rx5csZIv_6eFFT-Yu6ttN4VGlAGR88_kZY4vGwdHK_e-FbZ8RIXdxoGwCw3Td_CDHR1FoG6uBX5AKrl4X2sz6HXtCwlzMTo" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+<!-- Modal -->
+<div id="myModal" class="modal fade">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Sketches</h4>
+    </div>
+
+    <div class="modal-body">
+      <img src="sketch1.png">
+      <img src="sketch2.png">
+    </div>
+
+  </div>
+</div>
+
+<h1>Quick Draw
+<button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal">Show Sketch</button>
+  </h1>
+<p id="label"> Your sketch: </p>
+<p id="confidence"> Confidence </p>
+<p id="sketch_name"> sketch to be drawn: </p>
+</center> 
+<span id="score"> Score: </span>
+<span id="time"> Timer: </span>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
